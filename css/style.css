@@ -1,0 +1,220 @@
+
+html{
+    max-width: 1200px;
+    margin: auto;
+} 
+body{
+    font-family: 'New Tegomin', 'Noto Serif TC',serif;
+    letter-spacing: 0.1em; /*字距*/ 
+    margin: 0;
+    padding: 0;
+}
+a {
+    display: block; 
+    text-decoration: none;
+}
+header {
+    background-color: rgb(134, 160, 142);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+nav {
+    width: 90%;
+    margin: auto;
+    display: flex; /*排過去*/
+    justify-content: space-between;
+}
+/*---------------------------------------------*/
+a.ltitle{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 3px rgb(3, 27, 4);
+}
+a.ltitle:hover{ 
+    text-shadow: 0 0 8px rgb(27, 8, 3); 
+}
+a.ltitle:active{
+    color: rgb(66, 97, 75);
+}
+/*---------------------↑大標題↑------------------------*/
+ul.menu{
+    font-weight: bold;
+    font-size: 14pt;
+    list-style-type: none;
+    display: flex;
+    
+}
+ul.menu li{
+    position: relative;
+    padding: 0 0.5em;
+}
+ul.menu li a {
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 0 0 3px rgb(3, 27, 4);
+}
+ul.menu li a::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    max-width: 80%;
+    margin: auto;
+    left: 50%;
+    right: 50%;
+    bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    transition: .5s;
+}
+ul.menu li a:hover{
+    color: rgba(255, 255, 255);
+}
+ul.menu li a:hover::after {
+    left: 0;
+    right: 0;
+}
+ul.menu li a:active {
+    color: rgb(66, 97, 75);
+}
+/*--------------------↑選單↑------------------------*/
+.topimg{
+    height: 450px;
+    position: relative;
+}
+#homeimg{
+    background: url(../img/home_page01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+#PUimg { 
+    background: url(../img/Parabuteo_unicinctus01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+#BJimg {
+    background: url(../img/Buteo_jamaicensis01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+#AGimg {
+    background: url(../img/Accipiter_gentilis01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+#FPimg {
+    background: url(../img/Falco_peregrinus01.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    width: 100%;
+    height: 100%;
+}
+#MMimg{
+    background: url(../img/Milvus_milvus01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+}
+/*----------------------↑看版圖↑------------------------*/
+section.article_video {
+    width: 100%;
+    background-color: rgb(134, 160, 142);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*--------------------------↑看板圖下面那塊↑---------------------------*/
+.larticle {
+    width: 95%;
+    color: rgb(246, 250, 255);
+    line-height: 1.8;  /*行距*/
+    margin-left: 2em;
+}
+
+.larticle ol li {
+    text-align: justify;
+}
+.larticle ol li a{
+    color: rgb(66, 77, 92);
+}
+.larticle ol li a:hover{
+    color: rgb(246, 250, 255);
+}
+.larticle ol li a:active{
+    color: rgb(26, 54, 30);
+}
+.larticle p {
+    text-align: justify;
+}
+
+
+/*-------------------------↑文字區↑----------------------------*/
+aside {
+    display: flex;
+    width: 35%;
+}
+.raside {
+    width: 35%;
+    
+    float: right;
+    margin-left: 1.5em;
+    
+}
+.rvideo {
+    top: 1.5em;
+    position: relative;
+    width: 94%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+.rvideo iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+/*--------------------↑影片↑---------------------------*/
+.clear_rvideo {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.line {
+    width: auto;
+    height: 2px;
+    border-bottom: 1px dotted rgb(194, 194, 194);
+}
+/*-----------------------------↑空白↑--------------------------*/
+footer {
+    
+    width: 100%;
+    height: 70px;
+    
+    display: inline-flex;  /*直直地排過去*/
+    
+
+    background-color: rgb(51, 83, 60);
+    color: rgba(255, 255, 255, 0.8);
+
+    line-height: 1.8;  /*行距*/
+}
+footer p {
+    display: inline-flex;  /*直直地排過去*/
+    margin-left: 2em;
+}
+footer p a{
+    color: rgba(255, 255, 255, 0.8);
+}
+footer p a:hover{
+    color: rgb(134, 160, 142);
+}
+footer p a:active{
+    color: rgb(26, 54, 30);
+}
+/*-------------------------↑底部↑--------------------------*/
